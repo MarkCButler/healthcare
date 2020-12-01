@@ -6,7 +6,7 @@ from Kaggle
 The analysis has two goals:
 
   - Provide general insight into the healthcare market represented by the
-    dataset (apparently healthcare covered by Medicare)
+    dataset
   - Reveal associations involving the "potential fraud" label for healthcare
     providers in the training dataset
 
