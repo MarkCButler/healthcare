@@ -386,7 +386,7 @@ plot_summary(doctors_combined, title = 'Doctors',
 
 # Analysis
 
-## Chronic Conditions {.tabset}
+## Chronic conditions {.tabset}
 
 ### Summary {.unnumbered}
 
@@ -586,13 +586,13 @@ The plots below show that for inpatient claims, both doctors and patients can
 both be roughly classified into two groups:  those with no fraudulent claims
 and those with only fraudulent claims.
 
-  - For outpatient claims, the same pattern can be seem among doctors, but
+  - For outpatient claims, the same pattern can be seen among doctors, but
     the pattern is less pronounced among patients.
 
 The first plot below also shows, however, a small but still significant
 fraction of inpatients has 50% fraudulent claims.
 
-  - The may be distinct fraud methods associated with the different parts of
+  - There may be distinct fraud methods associated with the different parts of
     the distributions shown in the tabbed subsections.
 
 Note that the second plot below shows that in the category of inpatients
@@ -1343,5 +1343,30 @@ for (claim_type in claim_types) {
 
 </div>
 
-# Conclusion
+# Conclusion: fraud associations
 
+The strongest predictor of fraud in the dataset is the number of claims
+submitted by a provider.  The fraudulent providers, which represent a
+relatively small percentage of the total, are responsible for a substantial
+percentage of claims submitted.
+
+For inpatient claims, both doctors and patients can both be roughly classified
+into two groups:  those with no fraudulent claims and those with only
+fraudulent claims.
+
+  - For outpatient claims, the same pattern can be seen among doctors, but
+    the pattern is less pronounced among patients.
+
+In addition to this broad generalization, the analysis shows some subtler
+patterns in fraud associations involving patients.
+
+  - These patterns, which may be associated with distinct methods of fraud,
+    could be a guide in designing machine-learning methods of detecting fraud.
+
+Duplication of claims is a promising area for further investigation.
+
+  - The fact that the distribution of cost per day is essentially identical
+    for fraudulent and legitimate claims suggest that some form of claim
+    duplication may be widespread.
+  - A central question is which details of a claims are duplicated and which
+    are varied by fraudulent providers that generate a large number of claims.
